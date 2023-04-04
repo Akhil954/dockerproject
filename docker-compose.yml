@@ -1,0 +1,23 @@
+version: '3'
+services:
+  java:
+    image: avvariakhil/nitjava:v1
+    ports:
+      - "8000:80"
+    volumes:
+      - "javavolume"
+
+  devops:
+    image: avvariakhil/nitdevops:v1
+    ports:
+      - "8001:80"
+    volumes:
+      - "devopsvolume"
+
+  datascience:
+    image: avvariakhil/nitdatascience:v1
+    ports:
+      - "8002:80"
+    volumes:
+      - "datasciencevolume"
+    
